@@ -1,6 +1,6 @@
 footer {
-  background-color: #0f3460;
-  padding: 100px 0;
+  background-color: #4571a7;
+  padding: 55px 0;
   color: #fff;
 }
 footer h1 {
@@ -14,6 +14,11 @@ footer .img {
   padding: 15px 20px;
   border-radius: 5px;
 }
+
+footer .img:hover {
+  background-color: #2d5a92;
+}
+
 footer .img i {
   font-size: 20px;
   margin: 5px;
@@ -27,10 +32,39 @@ footer p {
   opacity: 0.5;
   margin-bottom: 20px;
 }
+
+footer .box{
+  padding-left: 100px;
+}
+
+footer .box1{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  float: left;
+
+}
+
 footer h2 {
   margin-bottom: 20px;
+  font-weight: 700;
 }
 footer li {
+  color: #0c2a4d;
   margin-bottom: 10px;
-  opacity: 0.5;
+}
+
+footer  li:hover{
+  background-color: #2d5a92;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  background: #d6d6d6;
+}
+
+.copyright p{
+  font-weight: lighter;
+  font-size: 14px;
 }

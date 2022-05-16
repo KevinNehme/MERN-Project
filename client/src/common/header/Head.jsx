@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "react-router-dom";
 
 const Head = () => {
   return (
@@ -12,8 +13,12 @@ const Head = () => {
             <label>support@TeamLebanon.com</label>
           </div>
           <div className='right row RText'>
-            <label>FAQ'S</label>
-            <label>Privacy Policy</label>
+          <label>
+            <Link to="/FAQS">FAQ'S</Link>
+            </label>
+            <label>
+            <Link to="/PrivacyPolicy">Privacy Policy</Link>
+            </label>
             <span>🌐</span>
             <label>EN</label>
             <span>💵</span>

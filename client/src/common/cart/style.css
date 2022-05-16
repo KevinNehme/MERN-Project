@@ -1,5 +1,9 @@
+.cart-items-container{
+  height: 100vh;
+  overflow-y: scroll;
+}
+
 .cart-items {
-  background: #f6f9fc;
   height: auto;
   padding: 50px 0;
 }

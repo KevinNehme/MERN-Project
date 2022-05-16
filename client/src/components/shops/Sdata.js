@@ -3,14 +3,14 @@ const Sdata = {
     {
       id: 7,
       cover: "./images/shops/shops-1.png",
-      name: "Mapple Earphones",
+      name: "Black Airpods",
       price: "180",
       discount: "25",
     },
     {
       id: 8,
       cover: "./images/shops/shops-2.png",
-      name: "Vivo android one",
+      name: "Nokia 2021",
       price: "120",
       discount: "10",
     },
@@ -24,7 +24,7 @@ const Sdata = {
     {
       id: 10,
       cover: "./images/shops/shops-4.png",
-      name: "Iphone",
+      name: "Iphone max",
       price: "999",
       discount: "10 ",
     },
@@ -38,7 +38,7 @@ const Sdata = {
     {
       id: 12,
       cover: "./images/shops/shops-7.png",
-      name: "Redimi Phone",
+      name: "Tecno 2018",
       price: "400",
       discount: "20 ",
     },
@@ -52,14 +52,14 @@ const Sdata = {
     {
       id: 14,
       cover: "./images/shops/shops-9.png",
-      name: "Airpod",
+      name: "White Airpods",
       price: "120",
       discount: "10",
     },
     {
       id: 15,
-      cover: "./images/shops/shops-10.png",
-      name: "Silver Cap",
+      cover: "./images/shops/shops-1.png",
+      name: "Black Airpods",
       price: "5",
       discount: "2",
     },

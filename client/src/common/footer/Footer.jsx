@@ -4,13 +4,14 @@ import "./style.css";
 const Footer = () => {
   return (
     <>
+
       <footer>
         <div className="container grid2">
-          <div className="box">
-            <h1>Bonik</h1>
+          <div className="box1">
+            <h1>MERN Team</h1>
             <p>
               We are dedicated students with an excellet attitude to work, and
-              our dream was to open an e-commerce shop :).
+              our dream was to open an e-commerce shop.
             </p>
             <div className="icon d_flex">
               <div className="img d_flex">
@@ -40,7 +41,7 @@ const Footer = () => {
               <li>Help Center </li>
               <li>How to Buy </li>
               <li>Track Your Order </li>
-              <li>Corporate & Bulk Purchasing </li>
+              <li>Corporate & Purchasing </li>
               <li>Returns & Refunds </li>
             </ul>
           </div>
@@ -53,7 +54,11 @@ const Footer = () => {
             </ul>
           </div>
         </div>
+       
       </footer>
+      <div className="copyright">
+      <p>&copy; 2022; All Rights Reserved. Made By MERN Team</p>
+        </div>
     </>
   );
 };
