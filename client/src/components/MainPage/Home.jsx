@@ -4,6 +4,7 @@ import "./Home.css";
 import SliderHome from "./Slider";
 
 const Home = () => {
+  
   return (
     <>
       <section className="home">
@@ -12,7 +13,7 @@ const Home = () => {
           <SliderHome />
         </div>
       </section>
-    </>
+   </>
   );
 };
 

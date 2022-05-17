@@ -10,6 +10,7 @@ import Sdata from "./components/shops/Sdata";
 import Contact from "./components/contact/Contact";
 import Register from "./components/auth/Register";
 import Login from './components/auth/Login';
+import About from './components/about/About';
 
 function App() {
   /*------card, shop &product items------*/
@@ -73,6 +74,9 @@ function App() {
           </Route>
           <Route path="/Login" exact>
             <Login />
+          </Route>
+          <Route path="/About us" exact>
+            <About />
           </Route>
         </Switch>
         <Footer />

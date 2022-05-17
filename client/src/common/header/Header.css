@@ -18,7 +18,6 @@
   padding: 20px 0;
 }
 
-
 .search .width {
   width: 20%;
 }
@@ -106,8 +105,8 @@ header ul li {
 }
 header ul li a {
   transition: 0.5s;
-  font-size: 15px;
-  font-weight: 400;
+  font-size: 18px;
+  font-weight: 600;
 }
 header ul li a:hover {
   color: #ff014f;
@@ -120,7 +119,7 @@ header ul li a:hover {
   height: 12vh;
   position: fixed;
   top: 0;
-  z-index: 1000;
+  z-index: 12;
   width: 100%;
   background-color: #fff;
   box-shadow: -1px 11px 24px -11px rgba(0, 0, 0, 0.2);
@@ -130,6 +129,18 @@ header ul li a:hover {
 .navlinks{
   display: flex;
   margin-top: -2em;
+}
+
+
+
+/* The progress container (grey background) */
+
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  height: 8px;
+  background: #4571a7;
+  width: 0%;
 }
 
 @media (max-width: 768px) {
