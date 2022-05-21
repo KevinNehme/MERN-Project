@@ -16,11 +16,11 @@ const Search = ({ CartItem }) => {
             <h1>MERN Team</h1>
           </div>
 
-          <div className="search-box f_flex">
+          {/* <div className="search-box f_flex">
             <i className="fa fa-search"></i>
             <input type="text" placeholder="Search and hit enter..." />
             <span>All Categories</span>
-          </div>
+          </div> */}
 
           <div className="icon f_flex width">
             <Link to="/Register">
