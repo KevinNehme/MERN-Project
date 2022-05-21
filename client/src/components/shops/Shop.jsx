@@ -16,8 +16,8 @@ const Shop = ({ addToCart, shopItems }) => {
                 <h2>Mobile Phones & Gear</h2>
               </div>
               <div className='heading-right row '>
-                <span>View all</span>
-                <i className='fa-solid fa-caret-right'></i>
+                {/* <span>View all</span>
+                <i className='fa-solid fa-caret-right'></i> */}
               </div>
             </div>
             <div className='product-content  grid1'>

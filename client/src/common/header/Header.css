@@ -126,21 +126,24 @@ header ul li a:hover {
   transition: 0.5s;
 }
 
-.navlinks{
+.navlinks {
   display: flex;
   margin-top: -2em;
 }
 
-
-
-/* The progress container (grey background) */
-
-
-/* The progress bar (scroll indicator) */
 .progress-bar {
-  height: 8px;
+  height: 10px;
   background: #4571a7;
   width: 0%;
+}
+
+#myBar {
+  background: #4571a7;
+}
+
+input p{
+  margin: 10px;
+  font-size: 14px;
 }
 
 @media (max-width: 768px) {
@@ -151,7 +154,8 @@ header ul li a:hover {
     position: absolute;
     display: block;
     list-style: none;
-    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    box-shadow: rgba(50, 50, 93, 0.23) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     left: 0;
     top: 0;
     transition: all 0.5s ease-in-out;

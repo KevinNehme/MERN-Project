@@ -9,14 +9,15 @@ import Footer from "./common/footer/Footer";
 import Sdata from "./components/shops/Sdata";
 import Contact from "./components/contact/Contact";
 import Register from "./components/auth/Register";
-import Login from './components/auth/Login';
-import About from './components/about/About';
+import Login from "./components/auth/Login";
+import About from "./components/about/About";
 
 function App() {
   /*------card, shop &product items------*/
   const { productItems } = Data;
   const { shopItems } = Sdata;
   const [CartItem, setCartItem] = useState([]);
+
   const addToCart = (product) => {
     const productExit = CartItem.find((item) => item.id === product.id);
     if (productExit) {
@@ -46,6 +47,7 @@ function App() {
       );
     }
   };
+
 
   return (
     <div>
