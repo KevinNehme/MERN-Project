@@ -9,10 +9,7 @@ const Navbar = () => {
       <header className="header">
         <div className="container d_flex">
           <div className="categories d_flex">
-            <span class="fa-solid fa-border-all"></span>
-            <h3>
-              Categories 
-            </h3>
+            
           </div>
 
           <div className="navlinks">

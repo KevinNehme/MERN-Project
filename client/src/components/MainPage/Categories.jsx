@@ -27,6 +27,12 @@ const Categories = () => {
   return (
     <>
       <div className="category">
+        <div className="catMain">
+        <div className="cat">
+          <span class="fa-solid fa-border-all"></span>
+          <h2>Categories</h2>
+        </div>
+        </div>
         {data.map((value, index) => {
           return (
             <div className="box f_flex" key={index}>

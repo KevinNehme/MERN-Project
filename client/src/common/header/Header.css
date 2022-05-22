@@ -24,10 +24,11 @@
 }
 
 .width h1 {
-  margin-top: 30px;
+  margin-top: 50px;
   color: #e94560;
   font-weight: 800;
   font-style: italic;
+  
 }
 .search-box {
   width: 80%;
@@ -56,6 +57,10 @@
   border-left: 2px solid rgba(0, 0, 0, 0.1);
   padding: 10px;
 }
+.icon{
+  margin-top: 10px;
+}
+
 .cart {
   position: relative;
 }
@@ -75,22 +80,14 @@
   justify-content: end;
 }
 /*------search-----------*/
-.categories {
+/* .categories {
   background-color: #f6f9fc;
   padding: 0px 30px;
   border-radius: 5px;
   height: 6vh;
   margin-top: 5px;
-}
-.categories span {
-  margin-right: 20px;
-  font-size: 30px;
-  margin-top: 10px;
-}
-.categories h3 {
-  font-weight: 500;
-  margin-top: 12px;
-}
+} */
+
 .categories h3 i {
   margin-left: 10px;
 }
