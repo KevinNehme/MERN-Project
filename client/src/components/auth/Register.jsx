@@ -9,7 +9,6 @@ import "react-toastify/dist/ReactToastify.css";
 
 
 const Register = () => {
-  console.log('hello');
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
   const [email, setEmail] = useState("");
