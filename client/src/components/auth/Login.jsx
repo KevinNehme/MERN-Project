@@ -78,7 +78,7 @@ const Login = () => {
       <ToastContainer position="top-center" />
       <div className="form-body">
         <h1>Sign in</h1>
-        {error && <Alert variant="danger">{error}</Alert>}
+        {/* {error && <Alert variant="danger">{error}</Alert>} */}
 
         <div className="box1">
           <label className="form__label" for="email">
@@ -112,8 +112,8 @@ const Login = () => {
           Sign in
         </button>
         <div className="signin">
-          <Link to="/login">
-            <h3> Already have an account ? Log in here</h3>
+          <Link to="/Register">
+            <h3> Don't have an account ? Sign up here</h3>
           </Link>
         </div>
       </div>
