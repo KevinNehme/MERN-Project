@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { auth } from "../../components/firebase";
 
 const SampleNextArrow = (props) => {
   const { onClick } = props;
@@ -52,7 +53,19 @@ const FlashCard = ({ productItems, addToCart }) => {
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
+  function signout() {
+    console.log(auth.currentUser); // This returns null
+    auth.signOut();
+  }
 
+
+  auth.onAuthStateChanged(function (user) {
+    if (user) {
+      document.getElementById("Removebtn").style.visibility = "visible";
+    } else {
+      document.getElementById("Removebtn").style.visibility = "hidden";
+    }
+  });
   return (
     <>
     <div className="upperSearch">
@@ -89,8 +102,8 @@ const FlashCard = ({ productItems, addToCart }) => {
                   </div>
                   <div className="price">
                     <h4>${productItems.price}.00 </h4>
-                    <button onClick={() => addToCart(productItems)}>
-                      <i className="fa fa-plus"></i>
+                    <button id="Removebtn" onClick={() => addToCart(productItems)}>
+                      <i id="Removebtn" className="fa fa-plus"></i>
                     </button>
                   </div>
                 </div>

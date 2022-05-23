@@ -16,3 +16,4 @@ var db = firebaseApp.firestore();
 
 export const database = getDatabase(firebaseApp);
 export { db };
+export const auth=firebaseApp.auth();

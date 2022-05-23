@@ -46,7 +46,6 @@ const Contact = () => {
           value={name}
           onChange={handleInputChange}
         />
-
         <label>Email</label>
         <input
           type="email"
@@ -55,7 +54,6 @@ const Contact = () => {
           value={email}
           onChange={handleInputChange}
         />
-
         <label>Password</label>
         <input
           type="password"
@@ -64,7 +62,6 @@ const Contact = () => {
           value={password}
           onChange={handleInputChange}
         />
-
         <label>Message</label>
         <textarea
           type="text"

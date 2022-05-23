@@ -1,10 +1,17 @@
 import { React, useState } from "react";
 import "./Register.css";
 import { Link } from "react-router-dom";
-import { database } from "../firebase";
+import { auth, database } from "../firebase";
 import { ref, push, child, update } from "firebase/database";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+// import { signup } from "../contexts/AuthContext";
+import {  useHistory } from "react-router-dom"
+import {  Alert } from "react-bootstrap"
+import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+
+
+
 
 const Register = () => {
   const [firstName, setFirstName] = useState("");
@@ -12,11 +19,20 @@ const Register = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
+  const [error, setError] = useState("");
+
+  const history = useHistory()
+
+  console.log(auth.currentUser)
+
+
+  // const { sign } = signup;
 
   const handleInputChange = (e) => {
     const { id, value } = e.target;
     if (id === "firstName") {
       setFirstName(value);
+
     } else {
     }
     if (id === "lastName") {
@@ -34,6 +50,11 @@ const Register = () => {
   };
 
   const handleSubmit = () => {
+
+    if (password !== confirmPassword) {
+      return toast.error("Passwords does not match");
+    }
+     
     let obj = {
       firstName: firstName,
       lastName: lastName,
@@ -41,17 +62,54 @@ const Register = () => {
       password: password,
       confirmPassword: confirmPassword,
     };
+  
+    console.log('hello');
 
-    const newPostKey = push(child(ref(database), "posts")).key;
-    const updates = {};
-    updates["/" + newPostKey] = obj;
-    return update(ref(database), updates);
+  const auth = getAuth();
+  createUserWithEmailAndPassword(auth, email, password)
+    .then((userCredential) => {
+      // Signed in 
+      // const user = userCredential.user;
+      setError("")
+
+      history.push("/");
+      const newPostKey = push(child(ref(database), "posts")).key;
+      const updates = {};
+      updates["/" + newPostKey] = obj;
+      return update(ref(database), updates);  
+      // ...
+    })
+    .catch((error) => {
+      // const errorCode = error.code;
+      // const errorMessage = error.message;
+      toast.error("Please use capital letters and numbers :)");
+
+      // ..
+    });
+//   try{
+//     signup(email,password);
+//     history.push("/");
+
+    
+
+//     const newPostKey = push(child(ref(database), "posts")).key;
+//     const updates = {};
+//     updates["/" + newPostKey] = obj;
+//     return update(ref(database), updates);
+  
+// } catch (error) {
+//   setError("Failed to create an account")
+
+// }
+    
   };
   return (
     <div className="form">
       <ToastContainer position="top-center" />
       <div className="form-body">
         <h1>Sign Up</h1>
+        {error && <Alert variant="danger">{error}</Alert>}
+
         <div className="box1">
           <label className="form__label" for="firstName">
             First Name{" "}
