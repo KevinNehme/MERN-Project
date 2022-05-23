@@ -8,10 +8,7 @@ const Navbar = () => {
     <>
       <header className="header">
         <div className="container d_flex">
-          <div className="categories d_flex">
-            
-          </div>
-
+          <div className="categories d_flex"></div>
           <div className="navlinks">
             <div className="navlink">
               <ul
@@ -33,19 +30,18 @@ const Navbar = () => {
                   <Link to="/Contact">contact</Link>
                 </li>
               </ul>
-
-            <button
-              className="toggle"
-              onClick={() => setMobileMenu(!MobileMenu)}
-            >
-              {MobileMenu ? (
-                <i className="fas fa-times close home-btn"></i>
-              ) : (
-                <i className="fas fa-bars open"></i>
-              )}
-            </button>
+              <button
+                className="toggle"
+                onClick={() => setMobileMenu(!MobileMenu)}
+              >
+                {MobileMenu ? (
+                  <i className="fas fa-times close home-btn"></i>
+                ) : (
+                  <i className="fas fa-bars open"></i>
+                )}
+              </button>
+            </div>
           </div>
-        </div>
         </div>
       </header>
     </>

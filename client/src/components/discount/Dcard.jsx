@@ -5,6 +5,8 @@ import "slick-carousel/slick/slick-theme.css";
 import Ddata from "./Ddata";
 import "../newarrivals/style.css";
 
+
+
 const Dcard = (productItems, addToCart) => {
   const SampleNextArrow = (props) => {
     const { onClick } = props;

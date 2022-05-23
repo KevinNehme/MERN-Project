@@ -97,6 +97,7 @@ button {
 .category .box {
   transition: 0.5s;
   padding: 0 20px;
+  margin-top: 2.5rem;
 }
 .category .box:hover {
   background-color: #ffe1e6;
