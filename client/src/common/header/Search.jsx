@@ -45,7 +45,7 @@ const Search = ({ CartItem }) => {
           </div>
 
           <div className="icon f_flex width">
-            <Link to={auth.currentUser === null ? "/Register" : "/"}>
+            <Link to={auth.currentUser === null ? "/Login" : "/"}>
               <i id="iconSignUp" className="fa fa-user icon-circle"></i>
               <button
                 id="btnSignOut"

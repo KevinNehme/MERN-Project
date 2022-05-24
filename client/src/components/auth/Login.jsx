@@ -39,7 +39,6 @@ const Login = () => {
       password: password,
     };
 
-    console.log("hello");
     setError("");
 
     //  signin(email,password);
@@ -62,17 +61,19 @@ const Login = () => {
       .catch((error) => {
         // const errorCode = error.code;
         // const errorMessage = error.message;
-        setError("Failed to create an account");
+        toast.error("Wrong Password or username");
 
         // ..
       });
-    history.push("/");
+    // history.push("/");
 
-    const newPostKey = push(child(ref(database), "posts")).key;
-    const updates = {};
-    updates["/" + newPostKey] = obj;
-    return update(ref(database), updates);
+    // const newPostKey = push(child(ref(database), "posts")).key;
+    // const updates = {};
+    // updates["/" + newPostKey] = obj;
+    // return update(ref(database), updates);
   };
+
+
   return (
     <div className="form">
       <ToastContainer position="top-center" />

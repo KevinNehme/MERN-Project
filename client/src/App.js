@@ -11,6 +11,7 @@ import Contact from "./components/contact/Contact";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import About from "./components/about/About";
+import Blog from "./components/blog/blog";
 
 function App() {
   /*------card, shop &product items------*/
@@ -77,6 +78,9 @@ function App() {
           </Route>
           <Route path="/About us" exact>
             <About />
+          </Route>
+          <Route path="/Blog" exact>
+            <Blog />
           </Route>
         </Switch>
         <Footer />
